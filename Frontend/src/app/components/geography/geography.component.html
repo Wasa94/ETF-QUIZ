@@ -1,0 +1,113 @@
+<br><br><br><br><br><br>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Geography</mat-card-title>
+        </mat-card-header>
+        <br>
+
+        <mat-card-content>
+            <mat-grid-list cols="8" rowHeight="25px">
+                <mat-grid-tile style="font-size: 20px;">Country</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">City</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">Lake</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">Mountain</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">River</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">Animal</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">Plant</mat-grid-tile>
+                <mat-grid-tile style="font-size: 20px;">Band</mat-grid-tile>
+                <mat-grid-tile>{{country[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[0]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[0]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[1]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[1]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[2]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[2]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[3]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[3]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[4]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[4]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[5]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[5]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[6]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[6]}}</mat-grid-tile>
+
+                <mat-grid-tile>{{country[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{city[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{lake[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{mountain[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{river[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{animal[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{plant[7]}}</mat-grid-tile>
+                <mat-grid-tile>{{band[7]}}</mat-grid-tile>
+            </mat-grid-list>
+
+            <div class="letter" style="margin: 10px">{{letter}}</div>
+
+            <form class="example-form" [formGroup]="form" (ngSubmit)="submit()">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Category</mat-label>
+                    <mat-select formControlName="category">
+                        <mat-option [value]="category" *ngFor="let category of categories">{{category}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Word" formControlName="word">
+                </mat-form-field>
+                <h4 style="text-align: center;">Score: {{score}}</h4>
+                <h4 style="text-align: center;">Time: {{time}}</h4>
+                <button mat-stroked-button color="accent" class="btn-block" [disabled]="!form.valid">Submit</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+<br><br><br>

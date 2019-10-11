@@ -1,0 +1,29 @@
+export interface Chalice {
+    _id: string;
+    question_9_1: string;
+    question_8_1: string;
+    question_7_1: string;
+    question_6_1: string;
+    question_5_1: string;
+    question_4_1: string;
+    question_3: string;
+    question_4_2: string;
+    question_5_2: string;
+    question_6_2: string;
+    question_7_2: string;
+    question_8_2: string;
+    question_9_2: string;
+    answer_9_1: string;
+    answer_8_1: string;
+    answer_7_1: string;
+    answer_6_1: string;
+    answer_5_1: string;
+    answer_4_1: string;
+    answer_3: string;
+    answer_4_2: string;
+    answer_5_2: string;
+    answer_6_2: string;
+    answer_7_2: string;
+    answer_8_2: string;
+    answer_9_2: string;
+}

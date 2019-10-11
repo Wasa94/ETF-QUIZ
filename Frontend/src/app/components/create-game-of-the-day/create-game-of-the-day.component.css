@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+}
+
+.box {
+    max-width: 80%;
+}
+
+.selected {
+    background-color: red;
+  }
+
+  .center {
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.datepicker {
+    max-width: 50%;
+}

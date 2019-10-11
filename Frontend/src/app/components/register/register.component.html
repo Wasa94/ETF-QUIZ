@@ -1,0 +1,74 @@
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="registerForm" (ngSubmit)="register()">
+
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="First Name" formControlName="firstName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Last Name" formControlName="lastName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Type</mat-label>
+          <mat-select [(value)]="selectedType" formControlName="type">
+            <mat-option [value]="type" *ngFor="let type of types">{{type}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Occupation" formControlName="occupation">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" formControlName="username">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Password" formControlName="password">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Repeat Password" formControlName="repeatPassword">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Gender</mat-label>
+          <mat-select [(value)]="selectedGender" formControlName="gender">
+            <mat-option [value]="gender" *ngFor="let gender of genders">{{gender}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="JMBG" formControlName="jmbg">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Security Question" formControlName="securityQuestion">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Answer" formControlName="answer">
+        </mat-form-field>
+
+      </mat-card-content>
+
+      <button mat-stroked-button color="accent" class="btn-block" [disabled]="!registerForm.valid">Register</button>
+
+    </form>
+  </mat-card>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>

@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="app-header">
+  <div><a href="https://www.etf.bg.ac.rs/" target="_blank" class="positronx">ETF QUIZ</a></div>
+  <span class="nav-tool-items">
+    <a mat-button routerLink="forgotPassword" routerLinkActive="active" *ngIf="!logged()">Forgot Password</a>
+    <a mat-button routerLink="results" routerLinkActive="active" *ngIf="!logged()">Results</a>
+    <a mat-button routerLink="resultsMonth" routerLinkActive="active" *ngIf="!logged()">Results of the Month</a>
+    <a mat-button routerLink="login" routerLinkActive="active" *ngIf="!logged()">Log in</a>
+    <a mat-button routerLink="changePassword" routerLinkActive="active" *ngIf="logged()">Change Password</a>
+    <a mat-button routerLinkActive="active" (click)="logout()" *ngIf="logged()">Log out</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active" *ngIf="!logged()">Register</a>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<mat-toolbar color="primary">
+</mat-toolbar>

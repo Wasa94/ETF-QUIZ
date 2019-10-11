@@ -1,0 +1,10 @@
+mat-grid-tile {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+  }
+
+.center {
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+}

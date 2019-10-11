@@ -1,0 +1,127 @@
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Create Chalice</mat-card-title>
+        </mat-card-header>
+
+        <form class="example-form" [formGroup]="form" (ngSubmit)="create()">
+            <mat-card-content>
+                <div class="row">
+                    <div class="columnQuestion">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_9_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_8_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_7_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_6_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_5_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_4_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_3">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_4_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_5_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_6_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_7_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_8_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Question" formControlName="question_9_2">
+                        </mat-form-field>
+                    </div>
+                    <div class="columnAnswer">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (9 letters)" formControlName="answer_9_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (8 letters)" formControlName="answer_8_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (7 letters)" formControlName="answer_7_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (6 letters)" formControlName="answer_6_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (5 letters)" formControlName="answer_5_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (4 letters)" formControlName="answer_4_1">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (3 letters)" formControlName="answer_3">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (4 letters)" formControlName="answer_4_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (5 letters)" formControlName="answer_5_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (6 letters)" formControlName="answer_6_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (7 letters)" formControlName="answer_7_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (8 letters)" formControlName="answer_8_2">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Answer (9 letters)" formControlName="answer_9_2">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </mat-card-content>
+            <button mat-stroked-button color="accent" class="btn-block" [disabled]="!form.valid">Create</button>
+            <button mat-stroked-button color="accent" class="btn-block" routerLink="/supervisor"
+                style="margin-top: 10px;">Cancel</button>
+        </form>
+    </mat-card>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

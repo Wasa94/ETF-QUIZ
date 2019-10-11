@@ -1,0 +1,13 @@
+mat-grid-tile {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+  }
+
+.letter {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+.box {
+  max-width: 80%;
+}

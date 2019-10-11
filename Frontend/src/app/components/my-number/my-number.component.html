@@ -1,0 +1,34 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>My Number</mat-card-title>
+        </mat-card-header>
+        <br>
+
+        <mat-card-content>
+            <div>
+                <mat-grid-list cols="6" class="center" rowHeight="20px">
+                    <mat-grid-tile>{{firstNumber}}</mat-grid-tile>
+                    <mat-grid-tile>{{secondNumber}}</mat-grid-tile>
+                    <mat-grid-tile>{{thirdNumber}}</mat-grid-tile>
+                    <mat-grid-tile>{{fourthNumber}}</mat-grid-tile>
+                    <mat-grid-tile>{{fifthNumber}}</mat-grid-tile>
+                    <mat-grid-tile>{{sixthNumber}}</mat-grid-tile>
+                </mat-grid-list>
+                <mat-grid-list cols="1" class="center" rowHeight="100px">
+                    <mat-grid-tile style="font-size: 50px">{{result}}</mat-grid-tile>
+                </mat-grid-list>
+            </div>
+            <form class="example-form" style="margin-top: 5px;">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Answer" [(ngModel)]="answer" name="myNumber" [disabled]="text==='Stop'"
+                        (keypress)="allowedCharacters($event)">
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <h4 style="text-align: center;">Score: {{score}}</h4>
+        <h4 style="text-align: center;">Time: {{time}}</h4>
+        <button mat-stroked-button color="accent" class="btn-block" (click)="click()">{{text}}</button>
+    </mat-card>
+</div>

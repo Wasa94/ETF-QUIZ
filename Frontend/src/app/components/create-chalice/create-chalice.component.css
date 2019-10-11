@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+}
+
+.columnAnswer {
+    flex: 30%;
+    margin-left: 15px;
+}
+
+.columnQuestion {
+    flex: 70%;
+}
+
+.box {
+    max-width: 80%;
+}

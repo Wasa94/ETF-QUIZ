@@ -1,0 +1,22 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Anagram</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="form" (ngSubmit)="submit()">
+      <mat-card-content>
+        <h2 style="text-align: center;">{{anagram?.problem}}</h2>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Solution" formControlName="solution">
+        </mat-form-field>
+        <h4 style="text-align: center;">Score: {{score}}</h4>
+        <h4 style="text-align: center;">Time: {{time}}</h4>
+      </mat-card-content>
+      <button mat-stroked-button color="accent" class="btn-block" [disabled]="!form.valid">Submit</button>
+    </form>
+  </mat-card>
+
+</div>

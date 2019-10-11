@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5d87e21484a7f700d4f9652a"},"date":{"$numberLong":"1569276000000"},"chalice":"5d829b965822e401ec363ea8","fiveByFive":"5d82a7c55d84a80c1055b015","anagram":"5d7fe7b5b252f41834689f4d","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d87e21e84a7f700d4f9652b"},"date":{"$numberLong":"1569362400000"},"chalice":"5d87e03e9319092730034a62","fiveByFive":"5d87df759319092730034a61","anagram":"5d87df129319092730034a5f","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d87e22684a7f700d4f9652c"},"date":{"$numberLong":"1569448800000"},"chalice":"5d87e03e9319092730034a62","fiveByFive":"5d82a7c55d84a80c1055b015","anagram":"5d87df129319092730034a5f","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d87e23284a7f700d4f9652d"},"date":{"$numberLong":"1569103200000"},"chalice":"5d829b965822e401ec363ea8","fiveByFive":"5d82a7c55d84a80c1055b015","anagram":"5d7fe7b5b252f41834689f4d","__v":{"$numberInt":"0"}}
